@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+<h1 style="text-align: center" >Home Page</h1>
+{% for i in post %}
+    <p style="text-align: center" >{{ forloop.counter }}</p>
+    <h2 style="text-align: center" >Chatagory</h2>
+    <p style="text-align: center" >{{ i.chatagory }}</p>
+    <h2 style="text-align: center" >Title</h2>
+    <p style="text-align: center" >{{ i.title }}</p>
+    <h2 style="text-align: center" >Post</h2>
+    <p style="text-align: center" > {{ i.post }}</p><br>
+{% endfor %}
+</body>
+</html>
